@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entre Canes</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+  <nav class="navbar bg-body-tertiary">
+    <div class="container logo-container">
+      <a class="navbar-brand" href="#">
+        <img src="/img/logo.png" alt="Entre Canes Logo" class="logo-img">
+      </a>
+    </div>
+  </nav>
+  
+  <!-- Banner -->
+  <section class="banner">
+    <img src="/img/0.jpg" alt="Banner Entre Canes" class="img-fluid">
+  </section>
+
+  <!-- Nuestra misión -->
+  <section class="seccion">
+    <h2>Nuestra misión</h2>
+    <p style="text-align: justify;">En Entre Canes nos dedicamos al rescate y cuidado de perros y gatos en situación de calle. Somos una asociación sin fines de lucro que trabaja con el apoyo de voluntarios y donaciones para ofrecerles una segunda oportunidad a estos animales.</p>
+  </section>
+
+  <!-- Carousel -->
+  <section class="carousel-container">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/img/1.jpg" class="d-block w-100" alt="Imagen 1">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/2.jpg" class="d-block w-100" alt="Imagen 2">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/3.jpg" class="d-block w-100" alt="Imagen 3">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/4.jpg" class="d-block w-100" alt="Imagen 4">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/5.jpg" class="d-block w-100" alt="Imagen 5">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/6.jpg" class="d-block w-100" alt="Imagen 6">
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- ¿Qué hacemos? -->
+  <section class="seccion">
+    <h2>¿Qué hacemos?</h2>
+    <div class="feature">
+      <i class="bi bi-heart"></i>
+      <h3>Rescate y cuidado</h3>
+      <p>Brindamos refugio temporal a más de 40 animales, asegurándonos de que reciban alimento, atención médica y cariño.</p>
+    </div>
+    <div class="feature">
+      <i class="bi bi-box2-heart-fill"></i>
+      <h3>Adopción</h3>
+      <p>Facilitamos la adopción responsable, ayudando a nuestros rescatados a encontrar un hogar amoroso.</p>
+    </div>
+    <div class="feature">
+      <i class="bi bi-clipboard2-pulse"></i>
+      <h3>Campañas de esterilización</h3>
+      <p>Promovemos la esterilización para controlar la población animal y prevenir el abandono.</p>
+    </div>
+  </section>
+
+  <!-- Cómo puedes ayudar -->
+  <section class="seccion">
+    <h2>Cómo puedes ayudar</h2>
+    <div class="feature">
+      <i class="bi bi-cart4"></i>
+      <h3>Donaciones en especie</h3>
+      <p>Aceptamos croquetas, cobijas y medicamentos en la Funeraria para Mascotas, ubicada en la calle Guerrero #508.</p>
+    </div>
+    <div class="feature">
+      <i class="bi bi-cash-coin"></i>
+      <h3>Donaciones económicas</h3>
+      <p>Puedes apoyar con una transferencia al número de cuenta Citibanamex: 4766-8704-1502-7996.</p>
+    </div>
+    <div class="feature">
+      <i class="bi bi-person-video2"></i>
+      <h3>Voluntariado</h3>
+      <p>Únete a nuestro equipo para ayudar en rescates, cuidado de los animales y eventos de adopción.</p>
+    </div>
+  </section>
+
+  <!-- Ubicación y contacto -->
+<section class="seccion">
+  <h2>Ubicación y contacto</h2>
+  <div class="feature">
+    <i class="bi bi-whatsapp"></i>
+    <h3>WhatsApp</h3>
+    <p>+52 6442 61 95 59</p>
+  </div>
+  <div class="feature">
+    <i class="bi bi-geo-alt"></i>
+    <h3>Ubicación</h3>
+    <p>Calle Guerrero #508, colonia Noroeste 85100 Cdad. Obregón, Son.</p>
+  </div>
+
+  <!-- Formulario de contacto -->
+  <form class="form-contacto" action="https://example.com/form-handler" method="POST">
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre completo</label>
+      <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre" required>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Correo electrónico</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="Tu correo" required>
+    </div>
+    <div class="mb-3">
+      <label for="mensaje" class="form-label">Mensaje</label>
+      <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+  </form>
+</section>
+
+  <!-- Redes sociales -->
+  <section class="seccion">
+    <h2>Síguenos en nuestras redes sociales</h2>
+    <div class="feature">
+      <i class="bi bi-facebook"></i>
+      <h3>Facebook</h3>
+      <a href="https://www.facebook.com/entre.canes.5" target="_blank">Entre Canes</a>
+    </div>
+    <div class="feature">
+      <i class="bi bi-instagram"></i>
+      <h3>Instagram</h3>
+      <a href="https://www.instagram.com/Canesentre" target="_blank">Canes Entre</a>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2024 Entre Canes. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
